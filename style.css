@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Общие стили */
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.container{
+   box-sizing: border-box;
+    max-width: 1170px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.btn {
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 165px;
+  height: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  background: red;
+  border-radius: 5px;
+
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--small {
+    width: 200px; /* Збільшимо кнопку */
+    height: 55px;
+    font-size: 18px;
+}
+p{
+    font-size: 24px;
+    color: white;
+    line-height: 1.8;
+}
+/* ===HEADER=== */
+.header{
+    background-color: #ffffff; /* Красный фон */
+    color: red;
+    padding: 20px 0;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1); /* Це додає тінь */
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 36px; /* Размер шрифта для логотипа */
+    font-weight: bold; /* Сделать текст жирным */
+    text-transform: uppercase; /* Заглавные буквы */
+}
+/* Навигация */
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav li+li{
+    margin-left: 40px;
+}
+.header__nav a{
+    font-size: 24px;
+    color: #676770;
+    transition: color 0.2s;
+}
+.header__nav a:hover{
+    color: #ff6f6f;
+}
+
+.header__nav a:active{
+    color: #800000;
+}
+
+/* ===MAIN=== */
+/* ===WELCOME=== */
+.welcome {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 195px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    text-align: center;
+
+    background-color: #1f1e1e;
+    background-image: url("im");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;  /* Элементы будут располагаться вертикально */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center;     /* Центрируем по горизонтали */
+    max-width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.welcome__title {
+    font-size: 30px;  /* Размер шрифта для заголовка */
+    color: red;
+    font-weight: bold; /* Сделать заголовок жирным */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.welcome__subtitle {
+    font-size: 24px;  /* Размер шрифта для подзаголовка */
+    color: rgb(255, 255, 255); /* Цвет текста для подзаголовка */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin-bottom: 20px; /* Отступ снизу */
+
+}
+
+.btn {
+     
+}
+
+/* ===Товари=== */
+
+.product {
+    padding: 100px 0;
+}
+.product .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 стовпці */
+    gap: 40px; /* Відступи між товарами */
+    justify-content: center;
+    max-width: 900px; /* Опціонально, щоб товари не розтягувалися */
+    margin: 0 auto;
+}
+
+.product__card {
+       width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    color: white;
+    background-color: #464545;
+    border-radius: 15px;
+    text-align: center; /* Вирівнює текст по центру */
+    display: flex; /* Додаємо flex */
+    flex-direction: column; /* Елементи йдуть по вертикалі */
+    justify-content: space-between; /* Розтягує елементи по висоті */
+    align-items: center; /* Вирівнює всі елементи по центру (включаючи кнопку) */
+
+}
+
+.product__img {
+    width: 100%;
+    height: 300px; /* Збільшимо висоту */
+    object-fit: cover; /* Щоб зображення не спотворювалися */
+}
+
+.product__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.btn {
+
+}
+
+.btn--small {
+}
+
+/* ===Інструкція=== */
+
+.instruction {
+    padding: 100px 0;
+    background-color: #1f1e1e;
+    text-align: center;
+}
+
+.instruction h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container {
+
+}
+
+.instruction-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Регулюємо ширину кроків */
+    text-align: center;
+}
+.step h3{
+      font-size: 30px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.step p{
+    font-size: 16px;
+  color: #555;
+}
+
+/* ===Про нас=== */
+.about-us {
+    background-color: #f4f4f4; /* Світлий фон */
+    padding: 100px 0; /* Відступи зверху та знизу */
+}
+
+.about-us__title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: red; /* Колір заголовка */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+.about-us__text {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    text-align: left; /* Текст по ліву сторону */
+    max-width: 800px;
+    margin-bottom: 40px; /* Відступ знизу */
+}
+
+.about-us__team {
+    display: flex;
+    justify-content: space-between; /* Розташовуємо елементи зліва і справа */
+    align-items: center; /* Центруємо по вертикалі */
+    max-width: 1100px; /* Встановлюємо максимальну ширину */
+    margin: 0 auto; /* Центруємо секцію */
+}
+
+
+
+.about-us__team p {
+    margin-left: auto;
+    font-size: 20px;
+    color: #1f1e1e;
+    font-weight: 600;
+}
+
+/* ===Футер=== */
+
+.footer {
+    padding: 50px 0;
+    background-color: #1f1e1e;
+    color: white;
+}
+.footer a {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color:#ff6f6f ;
+}
+.footer a:active {
+    color: #800000
+}
+
+.footer__quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+
+.footer__content {
+    display: flex;
+    justify-content: space-between; /* Лого зліва, контакти справа */
+    align-items: center;
+}
+
+.footer__logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.footer__contacts {
+     display: flex;
+    flex-direction: column; /* Спочатку заголовок, потім іконки */
+    align-items: flex-end; /* Вирівнюємо по правому краю */
+}
+
+.footer__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+    text-align: right; /* Щоб заголовок був вирівняний по правому краю */
+}
+
+.footer__icons {
+    display: flex;
+    gap: 15px; /* Відстань між іконками */
+}
+.footer__icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+.footer__icon img:hover {
+    transform: scale(1.1);
+}
+
+
